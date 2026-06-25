@@ -1,17 +1,22 @@
 export default {
   global: {
-    Name: 'Nombre del recurso educativo',
-    Description: 'Descripción del RED',
-    imagenBannerPrincipal: '@/assets/curso/portada/banner-principal.svg',
+    Name: 'Desarrollo e integración de la animación',
+    Description:
+      'La animación digital es utilizada en la producción audiovisual, convirtiéndose en una herramienta narrativa de interés comercial. Su uso se expande desde los comerciales publicitarios, los videojuegos y el cine. En este material se explican las técnicas de animación más utilizadas y las herramientas digitales para lograr la producción general de animaciones en 2D y 3D.',
+    imagenBannerPrincipal: '@/assets/curso/portada/banner-principal.png',
     fondoBannerPrincipal: '@/assets/curso/portada/fondo-banner-principal.png',
     imagenesDecorativasBanner: [
       {
         clases: ['banner-principal-decorativo-1', 'd-none', 'd-lg-block'],
-        imagen: '@/assets/curso/portada/banner-principal-decorativo-1.svg',
+        imagen: '@/assets/curso/portada/banner-principal-decorativo-1.png',
       },
       {
         clases: ['banner-principal-decorativo-2', 'd-none', 'd-lg-block'],
-        imagen: '@/assets/curso/portada/banner-principal-decorativo-2.svg',
+        imagen: '@/assets/curso/portada/banner-principal-decorativo-2.png',
+      },
+      {
+        clases: ['banner-principal-decorativo-3', 'd-none', 'd-lg-block'],
+        imagen: '@/assets/curso/portada/banner-principal-decorativo-3.png',
       },
     ],
   },
@@ -31,26 +36,41 @@ export default {
       {
         nombreRuta: 'tema1',
         numero: '1',
-        titulo: 'Tema 1',
+        titulo: 'Animación Digital 2D',
         desarrolloContenidos: true,
         subMenu: [
           {
             numero: '1.1',
-            titulo: 'Subtema 1',
+            titulo: 'Dibujo a mano alzada',
             hash: 't_1_1',
+          },
+          {
+            numero: '1.2',
+            titulo: 'Photoshop',
+            hash: 't_1_2',
+          },
+          {
+            numero: '1.3',
+            titulo: 'Illustrator',
+            hash: 't_1_3',
+          },
+          {
+            numero: '1.4',
+            titulo: 'After Effects',
+            hash: 't_1_4',
           },
         ],
       },
       {
         nombreRuta: 'tema2',
         numero: '2',
-        titulo: 'Tema 2',
+        titulo: 'Animación 3D',
         desarrolloContenidos: true,
       },
       {
         nombreRuta: 'tema3',
         numero: '3',
-        titulo: 'Tema 3',
+        titulo: 'Composición digital y VFX',
         desarrolloContenidos: true,
       },
     ],
@@ -80,7 +100,7 @@ export default {
       {
         icono: 'fas fa-file-pdf',
         titulo: 'Descargar PDF',
-        download: 'downloads/dist.pdf',
+        download: 'downloads/524704_CF04_DU.pdf',
       },
       {
         icono: 'fas fa-download',
@@ -99,11 +119,47 @@ export default {
       termino: 'Término',
       significado: 'Definición',
     },
+    {
+      termino: 'Digitalización',
+      significado:
+        'Proceso de transformar procesos análogos, objetos o imágenes físicas al mundo digital (informático).',
+    },
+    {
+      termino: 'Interfaz',
+      significado:
+        'Medio con el que el usuario interactúa con los programas de computación; comprende todos los puntos de contacto entre el usuario y el equipo, como pantallas de visualización, teclados, mouse y la apariencia del escritorio.',
+    },
+    {
+      termino: 'Panel',
+      significado:
+        'En informática, subdivisión de la interfaz de usuario que puede dividirse en secciones con herramientas o espacios donde se realizan procesos específicos dentro de un programa.',
+    },
+    {
+      termino: 'Renderización',
+      significado:
+        'Proceso que realiza un programa de diseño, ya sea de video, ilustración, fotografía o modelado 3D, para generar estos elementos al momento de verificar o exportar el trabajo final.',
+    },
+    {
+      termino: 'Usuario',
+      significado:
+        'En informática, persona que utiliza un <i>software</i> o programa de cómputo.',
+    },
   ],
   referencias: [
     {
-      referencia: '',
-      link: '',
+      referencia:
+        'Angulo, S. M. (2019). Los doce principios de animación. Tesseract Space.',
+      link: 'https://www.tesseractspace.com/blog/los-12-principios-de-animacion/',
+    },
+    {
+      referencia:
+        'Cortés, J. (2021). 10 Técnicas de composición digital en VFX. No Todo Animación.',
+      link: 'https://www.notodoanimacion.es/tecnicas-de-composicion-digital/',
+    },
+    {
+      referencia:
+        'Torres, A. (2021). Animación 3D: qué es, tipos principales y cómo se aplica hoy.  ESdesign Barcelona.',
+      link: 'https://www.esdesignbarcelona.com/actualidad/animacion/que-es-la-animacion-3d-y-que-tipos-existen',
     },
   ],
   creditos: [
@@ -112,7 +168,8 @@ export default {
       autores: [
         {
           nombre: 'Claudia Johanna Gómez Pérez',
-          cargo: 'Líder del Ecosistema',
+          cargo:
+            'Profesional 06. Responsable Ecosistema de Recursos Educativos Digitales',
           centro: 'Centro Agroturístico - Regional Santander',
         },
         {
@@ -126,9 +183,16 @@ export default {
       titulo: 'CONTENIDO INSTRUCCIONAL',
       autores: [
         {
-          nombre: '',
-          cargo: '',
-          centro: 'Centro XYZ - Regional XYZ',
+          nombre: 'Paulo César Hernández G.',
+          cargo: 'Experto temático',
+          centro:
+            'Centro para la Industria de la Comunicación Gráfica - Regional Distrito Capital',
+        },
+        {
+          nombre: 'Paola Alexandra Moya',
+          cargo: 'Evaluadora instruccional',
+          centro:
+            'Centro Agroempresarial y Desarrollo Pecuario - Regional Huila',
         },
       ],
     },
@@ -136,20 +200,44 @@ export default {
       titulo: 'DISEÑO Y DESARROLLO DE RECURSOS EDUCATIVOS DIGITALES',
       autores: [
         {
-          nombre: '',
+          nombre: 'Jorge David Barbosa Losada',
           cargo: 'Diseñador de contenidos digitales',
           centro:
             'Centro Agroempresarial y Desarrollo Pecuario - Regional Huila',
         },
         {
-          nombre: '',
-          cargo: 'Desarrollador <i>full stack</i>',
+          nombre: 'Henry Alvarez Astudillo',
+          cargo: 'Desarrollador fullstack',
           centro:
             'Centro Agroempresarial y Desarrollo Pecuario - Regional Huila',
         },
         {
-          nombre: '',
-          cargo: '',
+          nombre: 'Jose Eduardo Solano Rivero',
+          cargo: 'Animador y productor multimedia',
+          centro:
+            'Centro Agroempresarial y Desarrollo Pecuario - Regional Huila',
+        },
+        {
+          nombre: 'Gilberto Junior Rodríguez Rodríguez',
+          cargo: 'Animador y productor multimedia',
+          centro:
+            'Centro Agroempresarial y Desarrollo Pecuario - Regional Huila',
+        },
+        {
+          nombre: 'Lady Adriana Ariza Luque',
+          cargo: 'Animador y productor multimedia',
+          centro:
+            'Centro Agroempresarial y Desarrollo Pecuario - Regional Huila',
+        },
+        {
+          nombre: 'Nelson Iván Vera Briceño',
+          cargo: 'Animador y productor multimedia',
+          centro:
+            'Centro Agroempresarial y Desarrollo Pecuario - Regional Huila',
+        },
+        {
+          nombre: 'Wilson Andrés Arenales Cáceres',
+          cargo: 'Animador y productor multimedia',
           centro:
             'Centro Agroempresarial y Desarrollo Pecuario - Regional Huila',
         },
@@ -159,13 +247,25 @@ export default {
       titulo: 'VALIDACIÓN RECURSO EDUCATIVO DIGITAL',
       autores: [
         {
-          nombre: '',
+          nombre: 'Ricardo Oliveros Zambrano',
           cargo: 'Validador de recursos educativos digitales',
           centro:
             'Centro Agroempresarial y Desarrollo Pecuario - Regional Huila',
         },
         {
-          nombre: '',
+          nombre: 'Aixa Natalia Sendoya Fernández',
+          cargo: 'Validador de recursos educativos digitales',
+          centro:
+            'Centro Agroempresarial y Desarrollo Pecuario - Regional Huila',
+        },
+        {
+          nombre: 'Daniel Ricardo Mutis Gómez',
+          cargo: 'Evaluador para contenidos inclusivos y accesibles',
+          centro:
+            'Centro Agroempresarial y Desarrollo Pecuario - Regional Huila',
+        },
+        {
+          nombre: 'Anyerson Wilfredo Pizo Ossa',
           cargo: 'Evaluador para contenidos inclusivos y accesibles',
           centro:
             'Centro Agroempresarial y Desarrollo Pecuario - Regional Huila',
